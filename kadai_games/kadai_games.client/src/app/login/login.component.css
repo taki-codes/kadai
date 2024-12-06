@@ -1,0 +1,31 @@
+/* コンテナ全体を縦中央に配置 */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* カードのスタイル設定 */
+.form-card {
+  width: 400px;
+  padding: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトルのスタイル */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem; /* mb-4に相当 */
+  text-align: center;
+}
+
+/* ラベルのフォントサイズ */
+.form-label {
+  font-size: 1.1rem;
+}
+
+/* リンクのスタイル */
+.forgot-password-link {
+  font-size: 1rem;
+}

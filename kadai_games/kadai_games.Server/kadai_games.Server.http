@@ -1,0 +1,6 @@
+@kadai_games.Server_HostAddress =   
+
+GET {{kadai_games.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

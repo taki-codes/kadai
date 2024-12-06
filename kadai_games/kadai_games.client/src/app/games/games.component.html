@@ -1,0 +1,95 @@
+<div class="header">
+  <div class="logout-container">
+    <!-- Top画面に遷移ボタン -->
+    <button class="btn btn-info btn-sm btn-style"
+            (click)="navigateToTop()"
+            aria-label="Top画面に戻る">
+      Top画面
+    </button>
+    <!-- ログアウトボタン -->
+    <button class="btn btn-danger btn-style"
+            (click)="logout()"
+            aria-label="ログアウト">
+      ログアウト
+    </button>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h1>ゲーム一覧</h1>
+
+  <!-- 検索と新規作成ボタン -->
+  <div class="table-controls d-flex justify-content-between align-items-center mb-3">
+    <!-- 検索フォーム -->
+    <div class="input-group w-50">
+      <label for="searchInput" class="visually-hidden">ゲーム検索</label>
+      <input type="text"
+             id="searchInput"
+             class="form-control search-input"
+             placeholder="タイトル、メーカー、ジャンルで検索"
+             [(ngModel)]="searchQuery"
+             (keydown.enter)="updateQueryParams()"
+             aria-label="検索フォーム" />
+      <button class="btn btn-outline-secondary" (click)="updateQueryParams()">
+        検索
+      </button>
+    </div>
+
+    <!-- 新規作成ボタン -->
+    <button class="btn btn-primary"
+            (click)="navigateToNewGame()"
+            aria-label="新しいゲームを作成">
+      新規作成
+    </button>
+  </div>
+
+  <!-- エラーメッセージ -->
+  <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+    {{ errorMessage }}
+  </div>
+
+  <!-- ゲーム一覧 -->
+  <table *ngIf="filteredGames.length > 0; else noGames"
+         class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>タイトル</th>
+        <th>メーカー</th>
+        <th>ジャンル</th>
+        <th>
+          売上件数
+          <button class="btn btn-link btn-sm p-0 ms-1"
+                  title="昇順に並び替える"
+                  (click)="onSortChange('sales', 'asc')">
+            ▲
+          </button>
+          <button class="btn btn-link btn-sm p-0"
+                  title="降順に並び替える"
+                  (click)="onSortChange('sales', 'desc')">
+            ▼
+          </button>
+        </th>
+        <th class="operation">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let game of filteredGames">
+        <td>{{ game.title }}</td>
+        <td>{{ game.maker_Name }}</td>
+        <td>{{ game.genre_Name }}</td>
+        <td>{{ game.sales_Count }}</td>
+        <td>
+          <button class="btn btn-secondary btn-sm"
+                  (click)="navigateToDetail(game.game_Id)">
+            詳細
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 該当ゲームなし -->
+  <ng-template #noGames>
+    <div class="mt-4 alert alert-info">該当するゲームがありません。</div>
+  </ng-template>
+</div>

@@ -1,0 +1,19 @@
+<div class="container form-container">
+  <div class="card form-card">
+    <h3 class="text-center mb-4 title">ログイン</h3>
+    <form (submit)="login()">
+      <div class="mb-4">
+        <label for="email" class="form-label">メールアドレス</label>
+        <input type="email" class="form-control form-control-lg" id="email" [(ngModel)]="email" placeholder="メールアドレスを入力" name="email" required />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="form-label">パスワード</label>
+        <input type="password"  class="form-control form-control-lg" id="password" placeholder="パスワードを入力" [(ngModel)]="password" name="password" required />
+      </div>
+      <button type="submit" class="btn btn-primary w-100 btn-lg">ログイン</button>
+    </form>
+    <div class="text-center mt-3 forgot-password">
+      <a href="/forgot-password" class="forgot-password-link">パスワードを忘れた場合</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+/* 背景色と全体の余白 */
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 上寄せ配置 */
+  height: 100vh;
+  margin: 0;
+  padding-top: 25vh; /* 上に余白を設定 */
+}
+
+/* コンテンツを中央に配置するコンテナ */
+.center-container {
+  text-align: center;
+}
+
+/* タイトルのデザイン */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ボタンのスタイル */
+.btn-custom-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 30px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-custom-primary:hover {
+    background-color: #0056b3;
+  }
+
+.btn-custom-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem; /* ボタンのフォントサイズを設定 */
+  padding: 30px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-custom-secondary:hover {
+    background-color: #565e64;
+  }
+
+/* ボタンの配置 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  button:hover {
+    background-color: #c82333;
+  }
+
+.logout-container {
+  margin-left: auto; /* ボタンを右端に寄せる */
+}

@@ -1,0 +1,133 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+  .actions .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+    .actions .btn:hover {
+      background-color: #0056b3;
+    }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+}
+
+  .table th {
+    background-color: #343a40;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    text-align: center; /* テキストを中央揃え */
+    vertical-align: middle; /* 垂直方向の中央揃え */
+  }
+
+  .table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+ 
+  }
+
+  .table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+
+  .table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+
+.search-input {
+  max-width: 500px; /* 入力フィールドの幅を200pxに制限 */
+  width: 100%; /* レスポンシブで拡大を許容 */
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* 左右を等間隔に配置 */
+  align-items: center; /* 垂直方向を中央揃え */
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* 薄いグレーの背景色 */
+  border-bottom: 1px solid #ddd; /* 下線 */
+}
+
+.logout-container {
+  margin-left: auto; /* ボタンを右端に寄せる */
+}
+
+.btn-danger {
+ 
+  margin-left: 15px
+}
+.btn-style {
+  padding: 5px 15px; /* ボタン内の余白 */
+  font-size: 14px; /* フォントサイズ */
+  border-radius: 4px; /* 角丸 */
+  cursor: pointer; /* カーソルをポインタに変更 */
+}
+
+.btn-info.btn-style {
+  background-color: #17a2b8; /* Bootstrapのinfoカラー */
+  border-color: #17a2b8;
+  color: white;
+}
+
+  .btn-info.btn-style:hover {
+    background-color: #117a8b; /* Hover時の濃いinfoカラー */
+    border-color: #117a8b;
+  }
+
+.btn-danger.btn-style {
+  background-color: #dc3545; /* Bootstrapのdangerカラー */
+  border-color: #dc3545;
+  color: white;
+}
+
+  .btn-danger.btn-style:hover {
+    background-color: #c82333; /* Hover時の濃いdangerカラー */
+    border-color: #bd2130;
+  }
+
+
+.btn.btn-secondary.btn-sm {
+  text-align: center; /* 横方向の中央揃え */
+  vertical-align: middle; /* 垂直方向の中央揃え */
+  display: inline-flex; /* アイコンや複数要素を中央揃えする場合 */
+  justify-content: center; /* コンテンツを中央に配置 */
+  align-items: center; /* コンテンツを垂直方向に中央揃え */
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* 横方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  height: 100%; /* 必要に応じて高さを調整 */
+}
