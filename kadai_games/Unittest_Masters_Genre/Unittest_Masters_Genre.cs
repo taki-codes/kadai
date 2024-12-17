@@ -140,8 +140,8 @@ namespace Unittest_Masters_Genre
         Assert.IsNotNull(result);
         Assert.AreEqual(200, result.StatusCode);
 
-        var deletedGenre = _context.Genres.Find(genre.Genre_Id);
-        Assert.IsTrue(deletedGenre.Delete_Flg, "Delete_Flg should be set to true.");
+          var deletedGenre = _context.Genres.Find(genre.Genre_Id);
+          Assert.IsTrue(deletedGenre.Delete_Flg, "Delete_Flg should be set to true.");
 
         // トランザクションをロールバック
         transaction.Rollback();
@@ -208,6 +208,7 @@ namespace Unittest_Masters_Genre
         // Assert: BadRequestが返されているか確認
         Assert.IsNotNull(result, "Result should not be null.");
         Assert.AreEqual(400, result.StatusCode, "Status code should be 400 BadRequest.");
+        // Message プロパティを取得
         var response = result.Value.GetType().GetProperty("Message").GetValue(result.Value, null);
         Assert.AreEqual("同じジャンル名が既に存在します。", response);
 
@@ -260,7 +261,7 @@ namespace Unittest_Masters_Genre
         Assert.IsNotNull(result, "Result should not be null.");
         Assert.AreEqual(400, result.StatusCode, "Status code should be 400 BadRequest.");
 
-        // リフレクションを使用して Message プロパティを取得
+        // Message プロパティを取得
         var response = result.Value.GetType().GetProperty("Message").GetValue(result.Value, null);
         Assert.AreEqual("このジャンルはゲーム一覧に存在するため削除できません。", response);
 
@@ -293,7 +294,7 @@ namespace Unittest_Masters_Genre
         Assert.IsNotNull(result, "Result should not be null.");
         Assert.AreEqual(400, result.StatusCode, "Status code should be 400 BadRequest.");
 
-        // リフレクションで Message プロパティを取得
+        // Message プロパティを取得
         var response = result.Value.GetType().GetProperty("Message").GetValue(result.Value, null);
         Assert.AreEqual("同じジャンル名が既に存在します。", response);
 
