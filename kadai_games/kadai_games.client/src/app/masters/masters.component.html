@@ -1,0 +1,32 @@
+  <!-- ヘッダー -->
+<div class="header">
+  <div class="logout-container">
+    <!-- Top画面に遷移ボタン -->
+    <button class="btn btn-info btn-sm btn-style"
+            (click)="navigateToTop()"
+            aria-label="Top画面に戻る">
+      Top画面
+    </button>
+    <button class="btn btn-danger btn-sm btn-style" (click)="logout()">ログアウト</button>
+  </div>
+</div>
+
+<!-- コンテンツ -->
+<div class="container">
+  <h1 class="text-center mb-5">各マスター管理</h1>
+  <div class="row justify-content-center">
+    <div class="container mt-5">
+      <div class="button-container">
+        <!-- ユーザーマスター管理画面への遷移ボタン -->
+        <button (click)="navigateToUsers()" class="btn btn-success">ユーザー</button>
+
+        <!-- メーカーマスター管理画面への遷移ボタン -->
+        <button (click)="navigateToMakers()" class="btn btn-warning">メーカー</button>
+
+        <!-- ジャンルマスター管理画面への遷移ボタン -->
+        <button (click)="navigateToGenres()" class="btn btn-secondary">ジャンル</button>
+      </div>
+
+    </div>
+  </div>
+</div>

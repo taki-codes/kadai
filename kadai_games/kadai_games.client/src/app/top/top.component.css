@@ -35,6 +35,7 @@ h1 {
 
   .btn-custom-primary:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
   }
 
 .btn-custom-secondary {
@@ -81,6 +82,7 @@ button {
 
   button:hover {
     background-color: #c82333;
+    transform: scale(1.05);
   }
 
 .logout-container {

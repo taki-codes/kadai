@@ -1,54 +1,114 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\",
+  "WorkspaceRootPath": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.server\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.server\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1769524E-7C2F-4843-ADA5-86B2549F1220}|Unittest_Masters_Genre\\Unittest_Masters_Genre.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\unittest_masters_genre\\unittest_masters_genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1769524E-7C2F-4843-ADA5-86B2549F1220}|Unittest_Masters_Genre\\Unittest_Masters_Genre.csproj|solutionrelative:unittest_masters_genre\\unittest_masters_genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E86F1E9-0E1C-40FE-AB7E-46A26E1C2183}|Unittest_Masters_User\\Unittest_Masters_User.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\unittest_masters_user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E86F1E9-0E1C-40FE-AB7E-46A26E1C2183}|Unittest_Masters_User\\Unittest_Masters_User.csproj|solutionrelative:unittest_masters_user\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE360A0-DCBA-465C-A14B-864CD66992D5}|Unitttest_Games\\Unitttest_Games.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\unitttest_games\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE360A0-DCBA-465C-A14B-864CD66992D5}|Unitttest_Games\\Unitttest_Games.csproj|solutionrelative:unitttest_games\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE360A0-DCBA-465C-A14B-864CD66992D5}|Unitttest_Games\\Unitttest_Games.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\unitttest_games\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE360A0-DCBA-465C-A14B-864CD66992D5}|Unitttest_Games\\Unitttest_Games.csproj|solutionrelative:unitttest_games\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.server\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.server\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\genre\\genre.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\game\\game.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\services\\master.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\services\\master.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\game\\game.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\user\\user.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\game\\game.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\genres\\genres.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\top\\top.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\genre\\genre.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\games\\games.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\games\\games.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\games\\games.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\game\\game.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.server\\kadai_games.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\kadai_games.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\game\\game.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\users\\users.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\users\\users.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.server\\models\\makers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\models\\makers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1769524E-7C2F-4843-ADA5-86B2549F1220}|Unittest_Masters_Genre\\Unittest_Masters_Genre.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\unittest_masters_genre\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1769524E-7C2F-4843-ADA5-86B2549F1220}|Unittest_Masters_Genre\\Unittest_Masters_Genre.csproj|solutionrelative:unittest_masters_genre\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\genres\\genres.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.server\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BC3F5A7-F0A0-47D7-926D-260875C97149}|kadai_games.Server\\kadai_games.Server.csproj|solutionrelative:kadai_games.server\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\user\\user.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\genre\\genre.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|c:\\users\\yusuk\\onedrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\traininggames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{533D4907-5D08-409D-B738-9525CF375DFD}|kadai_games.client\\kadai_games.client.esproj|solutionrelative:kadai_games.client\\src\\app\\top\\top.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 351,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,159 +130,353 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\ViewModels\\GameViewModel.cs",
-              "RelativeDocumentMoniker": "kadai_games.Server\\ViewModels\\GameViewModel.cs",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\ViewModels\\GameViewModel.cs",
-              "RelativeToolTip": "kadai_games.Server\\ViewModels\\GameViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Games.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unitttest_Games\\Games.cs",
+              "RelativeDocumentMoniker": "Unitttest_Games\\Games.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unitttest_Games\\Games.cs",
+              "RelativeToolTip": "Unitttest_Games\\Games.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAYwNsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T07:24:33.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "kadai_games.Server\\Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\Controllers\\GameController.cs",
-              "RelativeToolTip": "kadai_games.Server\\Controllers\\GameController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T05:41:05.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "game.component.html",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.html",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\game\\game.component.html",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.html",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\game\\game.component.html",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-06T06:08:15.099Z",
+              "WhenOpened": "2024-12-17T07:12:13.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "game.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\game\\game.component.spec.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\game\\game.component.spec.ts",
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unitttest_Games\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "Unitttest_Games\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unitttest_Games\\MSTestSettings.cs",
+              "RelativeToolTip": "Unitttest_Games\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:24:28.24Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T07:12:08.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "games.component.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\games\\games.component.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\games\\games.component.ts",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAUwJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:05:54.094Z",
+              "DocumentIndex": 1,
+              "Title": "Unittest_Masters_Genre.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_Genre\\Unittest_Masters_Genre.cs",
+              "RelativeDocumentMoniker": "Unittest_Masters_Genre\\Unittest_Masters_Genre.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_Genre\\Unittest_Masters_Genre.cs",
+              "RelativeToolTip": "Unittest_Masters_Genre\\Unittest_Masters_Genre.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAcwK4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T03:50:49.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\app.module.ts",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:20:31.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "app-routing.module.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\app-routing.module.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\app-routing.module.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:23:58.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "game.component.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\game\\game.component.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\game\\game.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:07:02.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "games.component.html",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\games\\games.component.html",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\games\\games.component.html",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwF8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-06T06:06:09.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "games.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.spec.ts",
-              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\games\\games.component.spec.ts",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.spec.ts",
-              "RelativeToolTip": "kadai_games.client\\src\\app\\games\\games.component.spec.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-06T06:06:10.641Z",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_User\\User.cs",
+              "RelativeDocumentMoniker": "Unittest_Masters_User\\User.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_User\\User.cs",
+              "RelativeToolTip": "Unittest_Masters_User\\User.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAiwB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T06:18:23.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "kadai_games.Server.http",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.http",
-              "RelativeDocumentMoniker": "kadai_games.Server\\kadai_games.Server.http",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.http*",
-              "RelativeToolTip": "kadai_games.Server\\kadai_games.Server.http*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-06T06:02:41.824Z",
+              "Title": "genres.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\genres\\genres.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\genres\\genres.component.ts",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T00:54:36.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenreController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\GenreController.cs",
+              "RelativeDocumentMoniker": "kadai_games.Server\\Controllers\\GenreController.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\GenreController.cs",
+              "RelativeToolTip": "kadai_games.Server\\Controllers\\GenreController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:31:22.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "master.service.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\services\\master.service.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\services\\master.service.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\services\\master.service.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\services\\master.service.ts",
+              "ViewState": "AgIAADcAAAAAAAAAAAAEwC4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T03:53:40.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "kadai_games.Server\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\GameController.cs",
+              "RelativeToolTip": "kadai_games.Server\\Controllers\\GameController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:29:03.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "kadai_games.Server\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "kadai_games.Server\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T04:29:00.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "genre.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\genre\\genre.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\genre\\genre.component.ts",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwGEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T00:58:24.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "user.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\user\\user.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\user\\user.component.ts",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAwGMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T06:07:55.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\Program.cs",
-              "RelativeDocumentMoniker": "kadai_games.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\kadai\\kadai_games\\kadai_games.Server\\Program.cs",
-              "RelativeToolTip": "kadai_games.Server\\Program.cs",
+              "Title": "top.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\top\\top.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\top\\top.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T04:14:47.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "genre.component.html",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.html",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\genre\\genre.component.html",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.html",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\genre\\genre.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-17T00:58:27.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "games.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\games\\games.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\games\\games.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T02:47:53.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "game.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\game\\game.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\game\\game.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T02:47:55.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "games.component.html",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\games\\games.component.html",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\games\\games.component.html",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\games\\games.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-17T04:33:12.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "game.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\game\\game.component.spec.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\game\\game.component.spec.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\game\\game.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T04:33:07.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Makers.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Models\\Makers.cs",
+              "RelativeDocumentMoniker": "kadai_games.Server\\Models\\Makers.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Models\\Makers.cs",
+              "RelativeToolTip": "kadai_games.Server\\Models\\Makers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T06:01:42.214Z",
+              "WhenOpened": "2024-12-17T03:58:47.332Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "users.component.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\users\\users.component.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\users\\users.component.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\users\\users.component.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\users\\users.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T04:13:48.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-17T03:53:28.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_Genre\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "Unittest_Masters_Genre\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\Unittest_Masters_Genre\\MSTestSettings.cs",
+              "RelativeToolTip": "Unittest_Masters_Genre\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T03:50:27.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "user.component.html",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.html",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\user\\user.component.html",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\user\\user.component.html",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\user\\user.component.html",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-17T03:10:36.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "genres.component.html",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.html",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\genres\\genres.component.html",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genres\\genres.component.html",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\genres\\genres.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-17T02:25:04.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "genre.component.css",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.css",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\genre\\genre.component.css",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\genre\\genre.component.css",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\genre\\genre.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-17T00:58:26.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-16T14:17:24.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "kadai_games.Server\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.Server\\Models\\Users.cs",
+              "RelativeToolTip": "kadai_games.Server\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T03:11:44.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "top.component.css",
+              "DocumentMoniker": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.css",
+              "RelativeDocumentMoniker": "kadai_games.client\\src\\app\\top\\top.component.css",
+              "ToolTip": "C:\\Users\\yusuk\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\TrainingGames\\kadai_games\\kadai_games.client\\src\\app\\top\\top.component.css",
+              "RelativeToolTip": "kadai_games.client\\src\\app\\top\\top.component.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-16T04:26:32.871Z"
             }
           ]
         }

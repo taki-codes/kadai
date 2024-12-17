@@ -1,0 +1,55 @@
+.form-label {
+  font-weight: bold; /* ラベルを太字にする */
+}
+
+.form-control {
+  width: 50%; /* テキスト入力フィールドの幅を半分に設定 */
+}
+
+/* style.css */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #007bff;
+}
+
+p {
+  color: #6c757d;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4a4a4a; /* 少し落ち着いた色 */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: flex-start; /* ボタンを左揃えに配置 */
+  gap: 15px; /* ボタン間のスペース */
+  margin-top: 20px; /* 上部に余白を追加 */
+}
+
+  .actions button {
+    padding: 10px 20px; /* ボタン内の余白を調整 */
+    border: none; /* ボーダーを削除 */
+    border-radius: 4px; /* ボタンを角丸にする */
+    font-size: 14px; /* フォントサイズを調整 */
+    cursor: pointer;
+  }
+
+.delete {
+  margin-left: 20px;
+}
+
+.back {
+  margin-left: 20px;
+}
+
+.update {
+}

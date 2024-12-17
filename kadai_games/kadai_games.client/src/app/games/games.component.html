@@ -79,11 +79,13 @@
         <td>{{ game.genre_Name }}</td>
         <td>{{ game.sales_Count }}</td>
         <td>
-          <button class="btn btn-secondary btn-sm"
-                  (click)="navigateToDetail(game.game_Id)">
-            詳細
-          </button>
-        </td>
+          <div class="text-center">
+            <button class="btn btn-secondary btn-sm"
+                    (click)="navigateToDetail(game.game_Id)">
+              詳細
+            </button>
+            </div>
+        </td> 
       </tr>
     </tbody>
   </table>

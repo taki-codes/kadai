@@ -1,0 +1,119 @@
+<!-- 詳細画面: userが存在する場合にのみ表示 -->
+<div *ngIf="user">
+  <div class="container mt-5">
+    <h3 class="title mb-4">編集</h3>
+    <form [formGroup]="userForm" (ngSubmit)="updateUser()">
+      <!-- ユーザー名 -->
+      <div class="mb-3">
+        <label for="userName" class="form-label">ユーザー名:</label>
+        <input id="userName"
+               formControlName="userName"
+               class="form-control" />
+        <div *ngIf="userForm.get('userName')?.touched && userForm.get('userName')?.invalid"
+             class="text-danger">
+          <div *ngIf="userForm.get('userName')?.errors?.['required']">
+            ユーザー名は必須です。
+          </div>
+        </div>
+      </div>
+
+      <!-- メールアドレス -->
+      <div class="mb-3">
+        <label for="email" class="form-label">メールアドレス:</label>
+        <input id="email"
+               formControlName="email"
+               class="form-control" />
+        <div *ngIf="userForm.get('email')?.touched && userForm.get('email')?.invalid"
+             class="text-danger">
+          <div *ngIf="userForm.get('email')?.errors?.['required']">
+            メールアドレスは必須です。
+          </div>
+          <div *ngIf="userForm.get('email')?.errors?.['email']">
+            有効なメールアドレスを入力してください。
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="isAdminFlg" class="form-label">権限グループ:　</label>
+        <input id="isAdminFlg" type="checkbox" formControlName="isAdminFlg" />
+        <label class="form-check-label" for="adminCheck">管理者</label>
+      </div>
+      <!-- 更新ボタン -->
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary update">更新</button>
+        <button class="btn btn-secondary back" type="button" (click)="goBack()">戻る</button>
+        <button type="button" class="btn btn-danger delete" (click)="deleteUser()">削除</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- 新規登録画面: userが存在しない場合にのみ表示 -->
+<div *ngIf="!user">
+  <div class="container mt-5">
+    <h2 class="title mb-4">新規登録</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+      <!-- 共通エラーメッセージ -->
+      <div *ngIf="errorMessage" class="text-danger mb-3">
+        {{ errorMessage }}
+      </div>
+
+      <!-- ユーザー名 -->
+      <div class="mb-3">
+        <label for="userName" class="form-label">ユーザー名</label>
+        <input id="userName" formControlName="userName" type="text" class="form-control" />
+        <div *ngIf="registerForm.get('userName')?.touched && registerForm.get('userName')?.invalid" class="text-danger">
+          <div *ngIf="registerForm.get('userName')?.errors?.['required']">ユーザー名は必須です。</div>
+          <div *ngIf="registerForm.get('userName')?.errors?.['server']">{{ registerForm.get('userName')?.errors?.['server'] }}</div>
+        </div>
+      </div>
+
+      <!-- メールアドレス -->
+      <div class="mb-3">
+        <label for="email" class="form-label">メールアドレス</label>
+        <input id="email" formControlName="email" type="email" class="form-control" />
+        <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid" class="text-danger">
+          <div *ngIf="registerForm.get('email')?.errors?.['required']">メールアドレスは必須です。</div>
+          <div *ngIf="registerForm.get('email')?.errors?.['email']">有効なメールアドレスを入力してください。</div>
+          <div *ngIf="registerForm.get('email')?.errors?.['server']">{{ registerForm.get('email')?.errors?.['server'] }}</div>
+        </div>
+      </div>
+
+      <!-- パスワード -->
+      <div class="mb-3">
+        <label for="password" class="form-label">パスワード</label>
+        <input id="password" formControlName="password" type="password" class="form-control" />
+        <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid" class="text-danger">
+          <div *ngIf="registerForm.get('password')?.errors?.['required']">パスワードは必須です。</div>
+          <div *ngIf="registerForm.get('password')?.errors?.['server']">{{ registerForm.get('password')?.errors?.['server'] }}</div>
+        </div>
+      </div>
+
+
+      <!-- 管理者フラグ -->
+      <div>
+        <label for="isAdmin">
+          <input id="isAdmin"
+                 formControlName="isAdmin"
+                 type="checkbox" />
+          管理者
+        </label>
+      </div>
+
+      <!-- 登録ボタン -->
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">
+          登録
+        </button>
+
+        <button class="btn btn-secondary back" (click)="goBack()">戻る</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+

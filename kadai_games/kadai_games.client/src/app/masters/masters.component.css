@@ -1,0 +1,122 @@
+/* 背景色と全体の余白 */
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 上寄せ配置 */
+  height: 100vh;
+  margin: 0;
+  padding-top: 25vh; /* 上に余白を設定 */
+}
+
+.btn-secondary {
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 30px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-secondary:hover {
+    background-color: #565e64;
+    transform: scale(1.05);
+  }
+
+.btn-success {
+  background-color: #28a745; 
+  border-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 30px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+.btn-warning {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 30px 40px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+  .btn-warning:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+
+/* コンテンツを中央に配置するコンテナ */
+.center-container {
+  text-align: center;
+}
+
+/* タイトルのデザイン */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* ボタンの配置 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.logout-container {
+  margin-left: auto; /* ボタンを右端に寄せる */
+}
+
+.btn-style {
+  padding: 5px 15px; /* ボタン内の余白 */
+  font-size: 14px; /* フォントサイズ */
+  border-radius: 4px; /* 角丸 */
+  cursor: pointer; /* カーソルをポインタに変更 */
+}
+
+.btn-info.btn-style {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
+}
+
+  .btn-info.btn-style:hover {
+    background-color: #117a8b; 
+    border-color: #117a8b;
+  }
+
+.btn-danger {
+  margin-left: 15px
+}
+
+/* タイトルのデザイン */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333bf;
+}
+
+.container {
+  margin-top: 35px;
+}

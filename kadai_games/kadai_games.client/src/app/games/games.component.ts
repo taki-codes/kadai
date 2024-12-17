@@ -61,9 +61,8 @@ export class GamesComponent implements OnInit {
     });
   }
 
-
+// フィルタリング処理
   applyFilters(): void {
-    // フィルタリング処理
     this.filteredGames = this.games.filter(game =>
       (game.title?.toLowerCase() ?? '').includes(this.searchQuery.toLowerCase()) ||
       (game.maker_Name?.toLowerCase() ?? '').includes(this.searchQuery.toLowerCase()) ||

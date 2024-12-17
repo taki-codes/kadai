@@ -36,7 +36,7 @@ export class TopComponent {
 
   // マスター管理画面への遷移
   navigateToMaster(): void {
-    this.router.navigate(['/master']);
+    this.router.navigate(['/masters']);
   }
 
   //ログアウト処理

@@ -9,8 +9,6 @@ export class GamesService {
   // デフォルトのソート順
   sortOrder: 'asc' | 'desc' = 'asc';
 
-  private apiUrl = '/api/Game';
-
   // API のベース URL
   private baseUrl = 'https://localhost:7094/api/Game';
 
@@ -32,7 +30,6 @@ export class GamesService {
    */
   getGameById(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);
-
   }
 
   /**
@@ -51,6 +48,7 @@ export class GamesService {
    * @returns Observable
    */
   updateGame(id: number, game: any): Observable<any> {
+    console.log('Payload being sent:', game); // デバッグログで確認
     return this.http.put(`${this.baseUrl}/${id}`, game);
   }
 
@@ -78,7 +76,4 @@ export class GamesService {
   getGenres(): Observable<any> {
     return this.http.get(`${this.baseUrl}/genres`);
   }
-
-  
-
 }

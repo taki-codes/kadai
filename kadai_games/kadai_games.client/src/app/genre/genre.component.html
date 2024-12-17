@@ -1,0 +1,60 @@
+<div class="container mt-5">
+  <!-- 編集画面 -->
+  <div *ngIf="genreId; else createView">
+    <h2 class="title mb-4">編集</h2>
+
+    <!-- ジャンル名が存在する場合の表示 -->
+    <div *ngIf="genreDetail">
+      <div class="form-group">
+        <label for="genreName" class="form-label">ジャンル名:</label>
+        <input type="text"
+               id="genreName"
+               class="form-control"
+               [(ngModel)]="genreDetail.genre_Name"
+               name="genreName"
+               required
+               placeholder="ジャンル名を入力してください" />
+      </div>
+      <!-- サーバーエラー表示 -->
+      <div *ngIf="serverError" class="text-danger">
+        {{ serverError }}
+      </div>
+      <div class="actions">
+        <div class="actions mt-4">
+          <!-- 更新ボタン -->
+          <button class="btn btn-primary update" (click)="updateGenre()">更新</button>
+          <!-- 削除ボタン -->
+          <button class="btn btn-danger delete" (click)="deleteGenre()">削除</button>
+          <!-- 戻るボタン -->
+          <button class="btn btn-secondary back" type="button" (click)="goBack()">戻る</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- 新規作成画面 -->
+  <ng-template #createView>
+    <h2 class="title mb-4">新規作成</h2>
+    <form (ngSubmit)="createGenre()" #genreForm="ngForm">
+      <div class="form-group">
+        <label for="genreName" class="form-label">ジャンル名</label>
+        <input type="text"
+               id="genreName"
+               class="form-control"
+               [(ngModel)]="genreDetail.genre_Name"
+               name="genre_Name"
+               required
+               placeholder="ジャンル名を入力してください" />
+      </div>
+
+      <!-- サーバーエラー表示 -->
+      <div *ngIf="serverError" class="text-danger">
+        {{ serverError }}
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">作成</button>
+        <button class="btn btn-secondary back" type="button" (click)="goBack()">戻る</button>
+      </div>
+    </form>
+  </ng-template>

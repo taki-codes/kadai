@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "kX69Cd53NmHbs7Q5xjqkvpSc3M6qzEzYlQIZYRzt/2E=",
+  "Hash": "8D5MumBDTvORoBv+a0MMWqxFiuPAzoJGAx0wyE3AETY=",
   "Source": "kadai_games.Server",
   "BasePath": "_content/kadai_games.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
+      "Identity": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
       "Version": 2,
       "Source": "kadai_games.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

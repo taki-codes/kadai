@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:51053",
 "RedirectUrl": "",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\..\\kadai_games.client",
+"WorkingDirectory": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\..\\kadai_games.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

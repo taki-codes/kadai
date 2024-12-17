@@ -1,0 +1,16 @@
+2024-12-10T07:59:41.4175574+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.1+4f4ed7d3ce76cfa6e671c7a55f8b9cb6f2cb35c5
+2024-12-10T07:59:41.4345378+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2024-12-10T07:59:41.4355926+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2024-12-10T07:59:41.4355971+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 07:59:41.385
+2024-12-10T07:59:41.4393077+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 26656
+2024-12-10T07:59:41.4395782+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.11
+2024-12-10T07:59:41.4395951+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.11\System.Private.CoreLib.dll
+2024-12-10T07:59:41.4396058+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2024-12-10T07:59:41.4396095+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\yusuk\OneDrive\デスクトップ\TrainingGames\kadai_games\Unitttest_Games\bin\Debug\net8.0\Unitttest_Games.dll
+2024-12-10T07:59:41.4399395+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\yusuk\OneDrive\デスクトップ\TrainingGames\kadai_games\Unitttest_Games\bin\Debug\net8.0\Log --results-directory C:\Users\yusuk\OneDrive\デスクトップ\TrainingGames\kadai_games\TestResults --client-port 60112'
+2024-12-10T07:59:41.4416525+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2024-12-10T07:59:41.9197114+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2024-12-10T07:59:41.9231926+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\yusuk\OneDrive\デスクトップ\TrainingGames\kadai_games\Unitttest_Games\bin\Debug\net8.0\Unitttest_Games.testconfig.json' not found.
+2024-12-10T07:59:41.9248012+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2024-12-10T07:59:42.2289270+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.1' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2024-12-10T07:59:42.2886889+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings 属性 'MaxCpuCount' は Microsoft.Testing.Platform でサポートされていないため、無視されます

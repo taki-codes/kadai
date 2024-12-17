@@ -70,46 +70,7 @@ namespace kadai_games.Controllers
       });
     }
 
-    // 新規ユーザ登録処理
-    [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] RegisterModel model)
-    {
-      // 入力データの検証
-      if (!ModelState.IsValid)
-        return BadRequest("Invalid registration request.");
-
-      // 新しいユーザーを作成
-      var user = new Users
-      {
-        UserName = model.Email,   // ユーザー名に Email を使用
-        Email = model.Email,      // メールアドレスを登録
-        Is_Admin_Flg = model.IsAdmin // 管理者フラグを登録
-      };
-
-      // パスワードを含めてユーザーを作成
-      var result = await _userManager.CreateAsync(user, model.Password);
-
-      if (!result.Succeeded)
-        return BadRequest(result.Errors);
-
-      // 登録成功メッセージとユーザIDを返却
-      return Ok(new 
-      {
-        Message = "User registered successfully.",
-        UserId = user.Id
-      });
-    }
-
-
-    // 登録リクエストモデル
-    public class RegisterModel
-    {
-      public string Email { get; set; }      // メールアドレス
-      public string Password { get; set; }  // パスワード
-      public bool IsAdmin { get; set; }     // 管理者フラグ
-    }
-    // ログインユーザーモデル
-    public class GetAccount
+    public class GetAccount : Models.GetAccount
     {
       public string Email { get; set; }
       public string Password { get; set; }

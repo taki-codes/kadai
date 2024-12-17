@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\Unittest02\\Unittest.csproj": {}
+    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\Unittest02\\Unittest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj": {
+    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
+        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
         "projectName": "kadai_games.client",
-        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
+        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net6.0": {
@@ -20,14 +20,14 @@
         "net6.0": {}
       }
     },
-    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj": {
+    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj",
+        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj",
         "projectName": "kadai_games.Server",
-        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj",
+        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj",
         "packagesPath": "C:\\Users\\yusuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\obj\\",
+        "outputPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -66,6 +66,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.400.59, )"
+            },
             "MSTest.TestFramework": {
               "target": "Package",
               "version": "[2.2.8, )"
@@ -85,6 +89,10 @@
             "Microsoft.AspNetCore.SpaProxy": {
               "target": "Package",
               "version": "[8.*-*, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -132,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\Unittest02\\Unittest.csproj": {
+    "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\Unittest02\\Unittest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\Unittest02\\Unittest.csproj",
+        "projectUniqueName": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\Unittest02\\Unittest.csproj",
         "projectName": "Unittest",
-        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\Unittest02\\Unittest.csproj",
+        "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\Unittest02\\Unittest.csproj",
         "packagesPath": "C:\\Users\\yusuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\Unittest02\\obj\\",
+        "outputPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\Unittest02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,11 +168,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj": {
-                "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.client\\kadai_games.client.esproj"
+              "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj": {
+                "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.client\\kadai_games.client.esproj"
               },
-              "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj": {
-                "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\kadai\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj"
+              "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj": {
+                "projectPath": "C:\\Users\\yusuk\\OneDrive\\デスクトップ\\TrainingGames\\kadai_games\\kadai_games.Server\\kadai_games.Server.csproj"
               }
             }
           }

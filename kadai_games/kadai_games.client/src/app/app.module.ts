@@ -16,7 +16,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteConfirmDialog } from './game/game.component';
 import { GamesService } from './services/games.service';
-import { ReactiveFormsModule } from '@angular/forms'; // ReactiveFormsModuleを追加
+import { ReactiveFormsModule } from '@angular/forms';
+import { MastersComponent } from './masters/masters.component';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component'; 
+import { MasterService } from './services/master.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { GenresComponent } from './genres/genres.component';
+import { GenreComponent } from './genre/genre.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +32,12 @@ import { ReactiveFormsModule } from '@angular/forms'; // ReactiveFormsModuleを�
     TopComponent,
     GamesComponent,
     DeleteConfirmDialog, 
-    GameComponent, 
-   
+    GameComponent,
+    MastersComponent,
+    UsersComponent,
+    UserComponent,
+    GenresComponent,
+    GenreComponent, 
   ],
 
   imports: [
@@ -36,17 +47,18 @@ import { ReactiveFormsModule } from '@angular/forms'; // ReactiveFormsModuleを�
     HttpClientModule,
     CommonModule,
     RouterModule,
-    RouterModule.forRoot([]), 
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,
-    ReactiveFormsModule, // ReactiveFormsModuleをインポート
+    ReactiveFormsModule, 
+    FormsModule 
   ],
   providers: [
     LoginService,
     GamesService,
+    MasterService,
   ],
-
-  bootstrap: [AppComponent], 
+  bootstrap: [AppComponent],
 })
+
 export class AppModule { }
