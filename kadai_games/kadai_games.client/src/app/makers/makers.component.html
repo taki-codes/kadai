@@ -1,0 +1,59 @@
+<!-- ヘッダー部分 -->
+<div class="header">
+  <div class="logout-container">
+    <!-- Top画面に遷移ボタン -->
+    <button class="btn btn-info btn-sm btn-style"
+            (click)="navigateToTop()"
+            aria-label="Top画面に戻る">
+      Top画面
+    </button>
+    <!-- ログアウトボタン -->
+    <button class="btn btn-danger btn-style"
+            (click)="logout()"
+            aria-label="ログアウト">
+      ログアウト
+    </button>
+  </div>
+</div>
+
+<!-- メインコンテンツ部分 -->
+<div class="container mt-5">
+  <!-- タイトルと新規作成ボタン -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="title">メーカーマスター管理</h2>
+    <button class="btn btn-primary" (click)="navigateToNewMaker()">新規作成</button>
+  </div>
+
+  <!-- 検索ボックス -->
+  <div class="table-controls mb-3">
+    <div class="input-group w-50">
+      <input type="text" class="form-control" placeholder="検索" [(ngModel)]="searchText">
+      <button class="btn btn-outline-dark" (click)="search()">検索</button>
+    </div>
+  </div>
+
+  <!-- メーカー一覧テーブル -->
+  <table class="table table-bordered table-striped" id="makerTable">
+    <thead>
+      <tr>
+        <th>メーカー名</th>
+        <th>住所</th>
+        <th class="text-center">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let maker of makers">
+        <td>{{ maker.maker_Name }}</td>
+        <td>{{ maker.maker_Address || '未登録' }}</td>
+        <td>
+          <div class="text-center">
+            <!-- 編集ボタン -->
+            <button class="btn btn-secondary btn-sm" (click)="navigateToDetail(maker.maker_Id)">
+              編集
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

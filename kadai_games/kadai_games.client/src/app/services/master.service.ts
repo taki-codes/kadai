@@ -9,7 +9,8 @@ import { catchError, Observable, tap, throwError } from 'rxjs';
 })
 export class MasterService {
   private baseUrl_users = 'https://localhost:7094/api/User';
-  private baseUrl_genres = 'https://localhost:7094/api/Genre'; 
+  private baseUrl_genres = 'https://localhost:7094/api/Genre';
+  private baseUrl_makers = 'https://localhost:7094/api/Maker'; 
 
   constructor(private http: HttpClient) { }
 
@@ -66,5 +67,30 @@ export class MasterService {
   updateGenre(id: number, updatedGenre: any): Observable<any> {
     return this.http.put(`${this.baseUrl_genres}/genres/${id}`, updatedGenre);
   }
-  
+
+  //一覧画面取得＆検索(メーカーマスタ)
+  getMakers(searchText?: string): Observable<any> {
+    let params: any = {};
+    if (searchText) { params.searchText = searchText; }
+    return this.http.get<any[]>(`${this.baseUrl_makers}/makers`, { params });
+  }
+  // 新規登録処理(メーカーマスタ)
+  createMaker(genre: any): Observable<any> {
+    return this.http.post(this.baseUrl_makers, genre);
+  }
+  // ユーザー詳細取得(メーカーマスタ)
+  getMakerById(id: number): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl_makers}/makers/${id}`);
+  }
+
+  // ユーザー削除(メーカーマスタ)
+  deleteMaker(id: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl_makers}/makers/${id}`);
+  }
+
+  // ユーザー更新(メーカーマスタ)
+  updateMaker(id: number, updatedMaker: any): Observable<any> {
+    return this.http.put(`${this.baseUrl_makers}/makers/${id}`, updatedMaker);
+  }
+
 }

@@ -1,4 +1,3 @@
-using Amazon.Runtime.Internal;
 using kadai_games.Data;
 using kadai_games.Server.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -39,9 +38,9 @@ namespace kadai_games.Controllers
           })
           .AsQueryable();
 
-        // フィルタリング
-        if (!string.IsNullOrEmpty(title))
-          query = query.Where(g => g.Title.Contains(title));
+      // フィルタリング
+      if (!string.IsNullOrEmpty(title))
+        query = query.Where(g => g.Title.Contains(title));
 
       if (!string.IsNullOrEmpty(maker))
         query = query.Where(g => g.Maker_Name.Contains(maker));
@@ -51,62 +50,62 @@ namespace kadai_games.Controllers
 
       return Ok(query.ToList());
     }
-  
 
-      // ゲーム新規作成
-      [HttpPost]
-      public IActionResult CreateGame([FromBody] GameViewModel model)
+
+    // ゲーム新規作成
+    [HttpPost]
+    public IActionResult CreateGame([FromBody] GameViewModel model)
+    {
+      if (!ModelState.IsValid)
       {
-        if (!ModelState.IsValid)
+        // バリデーションエラーメッセージを返す
+        var errors = ModelState
+       .Where(kv => kv.Value.Errors.Any()) // エラーがある項目だけ取得
+       .ToDictionary(
+           kv => kv.Key, // フィールド名
+           kv => kv.Value.Errors.Select(e => e.ErrorMessage).ToArray() // エラーメッセージ配列
+       );
+
+        return BadRequest(errors);
+      }
+
+      var genre = _context.Genres.Find(model.Genre_Id);
+      var maker = _context.Makers.Find(model.Maker_Id);
+
+      if (genre == null || maker == null)
+      {
+        return BadRequest(new ErrorResponse
         {
-          // バリデーションエラーメッセージを返す
-          var errors = ModelState
-         .Where(kv => kv.Value.Errors.Any()) // エラーがある項目だけ取得
-         .ToDictionary(
-             kv => kv.Key, // フィールド名
-             kv => kv.Value.Errors.Select(e => e.ErrorMessage).ToArray() // エラーメッセージ配列
-         );
-
-          return BadRequest(errors); 
-        }
-
-        var genre = _context.Genres.Find(model.Genre_Id);
-        var maker = _context.Makers.Find(model.Maker_Id);
-
-        if (genre == null || maker == null)
-        {
-          return BadRequest(new ErrorResponse
-          {
-            Message = "無効な Genre_Id または Maker_Id です。",
-            Details = new Dictionary<string, object>
+          Message = "無効な Genre_Id または Maker_Id です。",
+          Details = new Dictionary<string, object>
           {
               { "Genre_Id", model.Genre_Id },
               { "Maker_Id", model.Maker_Id }
           }
-          });
-        }
-
-
-        var game = new Game
-        {
-          Title = model.Title,
-          Maker_Id = maker.Maker_Id,
-          Genre_Id = genre.Genre_Id,
-          Sales_Count = model.Sales_Count,
-          Memo = model.Memo,
-          CreateDate = DateTime.Now,
-          UpdateDate = DateTime.Now,
-          CreatedUser = "admin",
-          UpdateUser = "admin",
-          Delete_Flg = false
-        };
-
-
-        _context.Games.Add(game);
-        _context.SaveChanges();
-
-        return Ok(game);
+        });
       }
+
+
+      var game = new Game
+      {
+        Title = model.Title,
+        Maker_Id = maker.Maker_Id,
+        Genre_Id = genre.Genre_Id,
+        Sales_Count = model.Sales_Count,
+        Memo = model.Memo,
+        CreateDate = DateTime.Now,
+        UpdateDate = DateTime.Now,
+        CreatedUser = "admin",
+        UpdateUser = "admin",
+        Delete_Flg = false
+      };
+
+
+      _context.Games.Add(game);
+      _context.SaveChanges();
+
+      return Ok(game);
+    }
     // ジャンル一覧を取得
     [HttpGet("genres")]
     public IActionResult GetGenres()
@@ -118,9 +117,9 @@ namespace kadai_games.Controllers
             .Where(g => !g.Delete_Flg) // フラグが立っていないエントリのみ取得
             .Select(g => new
             {
-          g.Genre_Id,
-          g.Genre_Name
-        }).ToList();
+              g.Genre_Id,
+              g.Genre_Name
+            }).ToList();
 
         return Ok(genres);
       }
@@ -145,10 +144,10 @@ namespace kadai_games.Controllers
             .Where(m => !m.Delete_Flg) // フラグが立っていないエントリのみ取得
             .Select(m => new
             {
-          m.Maker_Id,
-          m.Maker_Name,
-          m.Maker_Address
-        }).ToList();
+              m.Maker_Id,
+              m.Maker_Name,
+              m.Maker_Address
+            }).ToList();
 
         return Ok(makers);
       }
@@ -246,10 +245,10 @@ namespace kadai_games.Controllers
     }
   }
   public class ErrorResponse
-    {
-      public string Message { get; set; }
-      public object Details { get; set; }
-    }
+  {
+    public string Message { get; set; }
+    public object Details { get; set; }
+  }
 
   public class SuccessResponse
   {
@@ -257,4 +256,4 @@ namespace kadai_games.Controllers
   }
 }
 
-  
+

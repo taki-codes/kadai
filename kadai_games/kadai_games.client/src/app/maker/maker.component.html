@@ -1,0 +1,76 @@
+<div class="container mt-5">
+  <!-- 編集画面 -->
+  <div *ngIf="makerId; else createView">
+    <h2 class="title mb-4">メーカー編集</h2>
+
+    <!-- メーカー詳細情報が存在する場合 -->
+    <div *ngIf="makerDetail">
+      <div class="form-group">
+        <label for="makerName" class="form-label">メーカー名:</label>
+        <input type="text"
+               id="makerName"
+               class="form-control"
+               [(ngModel)]="makerDetail.maker_Name"
+               name="makerName"
+               required
+               placeholder="メーカー名を入力してください" />
+      </div>
+
+      <div class="form-group">
+        <label for="makerAddress" class="form-label">住所:</label>
+        <input type="text"
+               id="makerAddress"
+               class="form-control"
+               [(ngModel)]="makerDetail.maker_Address"
+               name="makerAddress"
+               placeholder="住所を入力してください" />
+      </div>
+
+      <!-- サーバーエラー表示 -->
+      <div *ngFor="let error of serverErrors" class="text-danger">{{ error }}</div>
+
+      <div class="actions mt-4">
+        <!-- 更新ボタン -->
+        <button class="btn btn-primary update" (click)="updateMaker()">更新</button>
+        <!-- 削除ボタン -->
+        <button class="btn btn-danger delete" (click)="deleteMaker()">削除</button>
+        <!-- 戻るボタン -->
+        <button class="btn btn-secondary back" type="button" (click)="goBack()">戻る</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 新規作成画面 -->
+  <ng-template #createView>
+    <h2 class="title mb-4">メーカー新規作成</h2>
+    <form (ngSubmit)="createMaker()" #makerForm="ngForm">
+      <div class="form-group">
+        <label for="makerName" class="form-label">メーカー名:</label>
+        <input type="text"
+               id="makerName"
+               class="form-control"
+               [(ngModel)]="makerDetail.maker_Name"
+               name="maker_Name"
+               required
+               placeholder="メーカー名を入力してください" />
+      </div>
+
+      <div class="form-group">
+        <label for="makerAddress" class="form-label">住所:</label>
+        <input type="text"
+               id="makerAddress"
+               class="form-control"
+               [(ngModel)]="makerDetail.maker_Address"
+               name="maker_Address"
+               placeholder="住所を入力してください" />
+      </div>
+      <!-- サーバーエラー表示 -->
+        <div *ngFor="let error of serverErrors" class="text-danger">{{ error }}</div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">作成</button>
+        <button class="btn btn-secondary back" type="button" (click)="goBack()">戻る</button>
+      </div>
+    </form>
+  </ng-template>
+</div>

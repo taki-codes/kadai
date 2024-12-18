@@ -24,6 +24,8 @@ import { MasterService } from './services/master.service';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { GenresComponent } from './genres/genres.component';
 import { GenreComponent } from './genre/genre.component';
+import { MakersComponent } from './makers/makers.component';
+import { MakerComponent } from './maker/maker.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { GenreComponent } from './genre/genre.component';
     UsersComponent,
     UserComponent,
     GenresComponent,
-    GenreComponent, 
+    GenreComponent,
+    MakersComponent,
+    MakerComponent, 
   ],
 
   imports: [

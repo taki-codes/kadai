@@ -4,7 +4,6 @@ using kadai_games.Server.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace Unittest_Masters_Genre
 {
   [TestClass]
@@ -18,7 +17,7 @@ namespace Unittest_Masters_Genre
     {
       // データベースオプションの設定（SQL Server LocalDB使用）
       var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-          .UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=MyDatabase;Trusted_Connection=True;MultipleActiveResultSets=true;")
+          .UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=MyDatabase02;Trusted_Connection=True;MultipleActiveResultSets=true;")
           .Options;
 
       _context = new ApplicationDbContext(options);
@@ -59,6 +58,41 @@ namespace Unittest_Masters_Genre
       }
     }
 
+
+    /// <summary>
+    /// ジャンル一覧取得(検索後)
+    /// </summary>
+    [TestMethod]
+    public void GetGenres_ReturnsAllGenres_WhenSearchText()
+    {
+      using (var transaction = _context.Database.BeginTransaction())
+      {
+        // Arrange
+        _context.Genres.Add(new Genre { Genre_Name = "RPG", Delete_Flg = false });
+        _context.Genres.Add(new Genre { Genre_Name = "Action", Delete_Flg = false });
+        _context.Genres.Add(new Genre { Genre_Name = "Adventure", Delete_Flg = false });
+        _context.SaveChanges();
+        string searchText = "A";
+
+        // Act
+        var result = _controller.GetGenres(searchText) as OkObjectResult;
+
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.AreEqual(200, result.StatusCode);
+
+        var genres = result.Value as IEnumerable<GenreResponse>;
+        Assert.IsNotNull(genres, "Genres should not be null.");
+        // フィルタリングされたデータが正しいか確認
+        var genreList = genres.ToList();
+        Assert.AreEqual(2, genreList.Count, "Only one genre should match the search text");
+        // 各Listの値を検証
+        Assert.IsTrue(genreList.Any(g => g.Genre_Name == "Action"), "Action genre should be present");
+        Assert.IsTrue(genreList.Any(g => g.Genre_Name == "Adventure"), "Adventure genre should be present");
+        transaction.Rollback();
+      }
+    }
+
     /// <summary>
     /// ジャンル詳細取得
     /// </summary>
@@ -85,6 +119,7 @@ namespace Unittest_Masters_Genre
         transaction.Rollback();
       }
     }
+
     /// <summary>
     /// ジャンル新規作成
     /// </summary>
@@ -140,8 +175,9 @@ namespace Unittest_Masters_Genre
         Assert.IsNotNull(result);
         Assert.AreEqual(200, result.StatusCode);
 
-          var deletedGenre = _context.Genres.Find(genre.Genre_Id);
-          Assert.IsTrue(deletedGenre.Delete_Flg, "Delete_Flg should be set to true.");
+        var deletedGenre = _context.Genres.Find(genre.Genre_Id);
+        Assert.IsTrue(deletedGenre.Delete_Flg, "Delete_Flg should be set to true.");
+        Assert.AreEqual("Fantasy", deletedGenre.Genre_Name, "Genre name should be updated.");
 
         // トランザクションをロールバック
         transaction.Rollback();

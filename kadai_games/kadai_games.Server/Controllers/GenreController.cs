@@ -36,10 +36,10 @@ namespace kadai_games.Server.Controllers
 
       // クエリを実行して結果を取得
       var genres = query
-          .Select(g => new
+          .Select(g => new GenreResponse
           {
-            g.Genre_Id,
-            g.Genre_Name
+            Genre_Id = g.Genre_Id,
+            Genre_Name = g.Genre_Name
           })
           .ToList();
 
@@ -129,7 +129,11 @@ namespace kadai_games.Server.Controllers
       return Ok(genre);
     }
   }
-
+  public class GenreResponse
+  {
+    public int Genre_Id { get; set; }
+    public string Genre_Name { get; set; }
+  }
 }
 
 

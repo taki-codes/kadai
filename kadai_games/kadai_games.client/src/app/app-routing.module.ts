@@ -10,6 +10,8 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { GenreComponent } from './genre/genre.component';
 import { GenresComponent } from './genres/genres.component';
+import { MakerComponent } from './maker/maker.component';
+import { MakersComponent } from './makers/makers.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // デフォルトルート
@@ -25,6 +27,9 @@ const routes: Routes = [
   { path: 'Genres', component: GenresComponent, canActivate: [AuthGuard] },//ジャンルマスタ管理一覧ページ
   { path: 'genre/new', component: GenreComponent, canActivate: [AuthGuard] },//ジャンルマスタ管理一覧：新規登録ページ
   { path: 'genre/:id', component: GenreComponent, canActivate: [AuthGuard] },//ジャンルマスタ管理一覧：詳細ページ
+  { path: 'Makers', component: MakersComponent, canActivate: [AuthGuard] },//メーカーマスタ管理一覧ページ
+  { path: 'maker/new', component: MakerComponent, canActivate: [AuthGuard] },//メーカーマスタ管理一覧：新規登録ページ
+  { path: 'maker/:id', component: MakerComponent, canActivate: [AuthGuard] },//メーカーマスタ管理一覧：詳細ページ
  
 ];
 
