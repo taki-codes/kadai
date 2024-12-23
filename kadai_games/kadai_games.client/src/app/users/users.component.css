@@ -61,3 +61,7 @@ p {
   border-radius: 4px; /* 角丸 */
   cursor: pointer; /* カーソルをポインタに変更 */
 }
+
+.btn-secondary.btn-style {
+  margin-right: 15px
+}

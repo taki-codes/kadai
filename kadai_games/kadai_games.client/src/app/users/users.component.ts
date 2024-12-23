@@ -101,6 +101,11 @@ export class UsersComponent implements OnInit {
     this.router.navigate(['/top']);
   }
 
+  // 一覧画面に戻る
+  goBack(): void {
+    this.router.navigate(['/masters'])
+  }
+
   // ログアウト処理
   logout(): void {
     this.loginService.logout().subscribe(

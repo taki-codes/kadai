@@ -66,3 +66,7 @@ p {
   max-width: 500px; /* 入力フィールドの幅を200pxに制限 */
   width: 100%; /* レスポンシブで拡大を許容 */
 }
+
+.btn-secondary.btn-style {
+  margin-right: 15px
+}

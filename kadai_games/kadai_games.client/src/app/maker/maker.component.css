@@ -53,3 +53,7 @@ p {
 
 .update {
 }
+
+.text-danger {
+  writing-mode: horizontal-tb; /* 横書きに変更 */
+}

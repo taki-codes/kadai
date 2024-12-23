@@ -27,7 +27,9 @@
       </div>
 
       <!-- サーバーエラー表示 -->
-      <div *ngFor="let error of serverErrors" class="text-danger">{{ error }}</div>
+      <div class="text-danger">
+        <span *ngFor="let error of serverErrors">{{ error }} </span>
+      </div>
 
       <div class="actions mt-4">
         <!-- 更新ボタン -->
@@ -51,7 +53,6 @@
                class="form-control"
                [(ngModel)]="makerDetail.maker_Name"
                name="maker_Name"
-               required
                placeholder="メーカー名を入力してください" />
       </div>
 

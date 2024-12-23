@@ -21,9 +21,11 @@ namespace kadai_games.Server.Controllers
     [HttpGet("makers")]
     public IActionResult GetMakers([FromQuery] string? searchText)
     {
+      // 削除フラグが立っていないメーカーのみ対象
       var query = _context.Makers
-          .Where(m => !m.Delete_Flg); // 削除フラグが立っていないメーカーのみ対象
+          .Where(m => !m.Delete_Flg);
 
+      // 削除フラグが立っていないメーカーを取得
       if (!string.IsNullOrEmpty(searchText))
       {
         query = query.Where(m => m.Maker_Name.Contains(searchText) ||
@@ -46,6 +48,7 @@ namespace kadai_games.Server.Controllers
     [HttpPost]
     public IActionResult CreateMaker([FromBody] MakerViewModel model)
     {
+      // 同じ名前のメーカーが既に存在するか確認
       var existingMaker = _context.Makers
           .FirstOrDefault(m => m.Maker_Name == model.Maker_Name && !m.Delete_Flg);
 
@@ -74,11 +77,6 @@ namespace kadai_games.Server.Controllers
     public IActionResult GetMakerDetails(int id)
     {
       var maker = _context.Makers.FirstOrDefault(m => m.Maker_Id == id && !m.Delete_Flg);
-
-      if (maker == null)
-      {
-        return NotFound(new { Message = "メーカーが見つかりません。" });
-      }
 
       return Ok(maker);
     }
@@ -111,11 +109,7 @@ namespace kadai_games.Server.Controllers
     {
       var maker = _context.Makers.FirstOrDefault(m => m.Maker_Id == id && !m.Delete_Flg);
 
-      if (maker == null)
-      {
-        return NotFound(new { Message = "メーカーが見つかりません。" });
-      }
-
+      // 同じ名前のメーカーが既に存在するか確認
       var existingMaker = _context.Makers
           .FirstOrDefault(m => m.Maker_Name == updatedMaker.Maker_Name && m.Maker_Id != id && !m.Delete_Flg);
 

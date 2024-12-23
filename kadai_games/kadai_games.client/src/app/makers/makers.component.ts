@@ -79,4 +79,8 @@ export class MakersComponent implements OnInit {
       error: () => alert('ログアウトに失敗しました'),
     });
   }
+  // 一覧画面に戻る
+  goBack(): void {
+    this.router.navigate(['/masters'])
+  }
 }

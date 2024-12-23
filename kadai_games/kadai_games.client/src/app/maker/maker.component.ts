@@ -21,8 +21,7 @@ export class MakerComponent implements OnInit {
   makerDetail: Maker = { maker_Name: '' }; // 詳細情報
   queryParams: any = {}; // クエリパラメータ
   serverError: string | null = null; // サーバーエラーメッセージ
-  // サーバーエラーを格納する配列
-  serverErrors: string[] = []; 
+  serverErrors: string[] = [];   // サーバーエラーを格納する配列
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -114,7 +113,7 @@ export class MakerComponent implements OnInit {
           this.serverErrors.push(...errorResponse.error.errors.Maker_Address);
         }
         if (errorResponse.error?.message) {
-          this.serverErrors.push(errorResponse.error.message);
+          this.serverErrors.push(...errorResponse.error.message);
         }
       }
     });
