@@ -3,6 +3,7 @@ using kadai_games.Data;
 using kadai_games.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 // ログ設定の追加
@@ -25,7 +26,9 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-  c.CustomSchemaIds(type => type.FullName); // モデル名の競合を回避
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+    // クラス名だけでスキーマを生成
+    c.CustomSchemaIds(type => type.Name);
 });
 
 // DbContext の登録
