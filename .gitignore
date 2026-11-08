@@ -1,0 +1,42 @@
+# .NET / Visual Studio generated files
+**/[Bb]in/
+**/[Oo]bj/
+.vs/
+**/.vs/
+*.user
+*.suo
+*.sln.docstates
+*.csproj.Backup.tmp
+
+# JavaScript dependencies and build output
+**/node_modules/
+**/dist/
+**/.angular/cache/
+**/out-tsc/
+**/coverage/
+
+# Test / diagnostic output
+**/TestResults/
+*.log
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Local databases
+*.mdf
+*.ldf
+*.db
+*.db-shm
+*.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db

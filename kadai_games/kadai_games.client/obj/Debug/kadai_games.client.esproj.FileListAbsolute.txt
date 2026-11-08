@@ -1,3 +1,0 @@
-C:\Users\yusuk\kadai_games\kadai_games.client\obj\Debug\kadai_games.client.esproj.CoreCompileInputs.cache
-C:\Users\yusuk\OneDrive\デスクトップ\TrainingGames\kadai_games\kadai_games.client\obj\Debug\kadai_games.client.esproj.CoreCompileInputs.cache
-C:\Users\yusuk\OneDrive\デスクトップ\バックアップ\kadai_games\kadai_games.client\obj\Debug\kadai_games.client.esproj.CoreCompileInputs.cache

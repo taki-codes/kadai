@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\kadai_games.Server.props" />
-</Project>
